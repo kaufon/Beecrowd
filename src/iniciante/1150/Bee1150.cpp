@@ -4,7 +4,7 @@ using namespace std;
 
 int main()
 {
-    int x, z,contador = 0,sum = 0;
+    int x, z,sum = 1;
     while (true)
     {
         scanf("%d %d",&x,&z);
@@ -14,19 +14,15 @@ int main()
         }
         break;
     }
-    for (int i = x;;i++)
+    for (int i = x;i <= z;i += i + sum)
     {
-        sum +=i;
-        contador++;
-        if (sum >=z)
-        {
-            break;
-        }
+        i += x+ sum;
+        ++sum;
         
 
         
     }
-    printf("%d\n",contador);
-    
+    printf("%d\n",sum);    
     return 0;
 }
+/*this fucking piece of shit took me 3 hours bcus of line 11*/
