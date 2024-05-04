@@ -44,4 +44,6 @@
 | Text file storage          | text              | 🧾 `:pencil:`                    |
 | Code review                | review            | 👌 `:ok_hand:`                   |
 | Solve Exercise             | solve             | 🤓 `:nerd:`                      |
+
+## Credits to JohnPetros 🐼
                                                     
