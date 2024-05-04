@@ -45,5 +45,5 @@
 | Code review                | review            | 👌 `:ok_hand:`                   |
 | Solve Exercise             | solve             | 🤓 `:nerd:`                      |
 
-## Credits to JohnPetros 🐼
+## Credits to [JohnPetros 🐼](https://github.com/JohnPetros)
                                                     
