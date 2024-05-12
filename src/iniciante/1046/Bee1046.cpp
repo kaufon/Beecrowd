@@ -11,6 +11,11 @@ int main(){
        if (i == 24)
        {
         i = 0;
+        if (i == fim)
+        {
+            break;
+        }
+        
        }
        contador++;
        
