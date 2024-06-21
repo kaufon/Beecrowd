@@ -1,6 +1,5 @@
+#include <algorithm>
 #include <bits/stdc++.h>
-#include <cstdio>
-#include <utility>
 
 using namespace std;
 
@@ -12,12 +11,7 @@ int main (int argc, char *argv[]) {
     Numbers.push_back(N);
   }
   
-  for (int i = 0; i < (Numbers.size()/2); i++) {
-    swap(Numbers[i],Numbers[(Numbers.size()/2) - i - 1]);
-
-    
-  }
-
+  reverse(Numbers.begin(),Numbers.end());
   for (int i = 0; i < Numbers.size(); i++) {
     printf("N[%d] = %d\n",i,Numbers[i]);
     
