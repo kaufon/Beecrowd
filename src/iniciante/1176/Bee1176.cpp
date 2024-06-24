@@ -1,30 +1,23 @@
 #include <bits/stdc++.h>
 #include <cstdio>
+#include <iostream>
+
 using namespace std;
 
-int Fibonacci(unsigned long long int x) {
-    if (x == 0) {
-        return 0;
-    }
-    unsigned long long int a = 0;
-    unsigned long long int b = 1;
-    unsigned long long int middleman = 0;
-    for (int i = 0; i < x-1; i++) {
-        middleman = a+b;
-        a = b;
-        b = middleman;
-    }
-    return b;
-};
-
 int main(int argc, char *argv[]) {
-    int N;
-    cin >> N;
-    for (int i = 0; i < N; i++) {
-        unsigned long long number_of_terms;
-        cin >> number_of_terms;
-        cout << "Fib("<<number_of_terms<<")" <<" = "<<Fibonacci(number_of_terms) <<endl;
-    }
-    return 0;
-}
+  int N, F;
+  long long int FibbonaciSequence[61];
+  cin >> N;
+  FibbonaciSequence[0] = 0;
+  FibbonaciSequence[1] = 1;
+  for (int Terms = 2; Terms <= 60; Terms++) {
+    FibbonaciSequence[Terms] =
+        FibbonaciSequence[Terms - 2] + FibbonaciSequence[Terms - 1];
+  }
+  for (int i = 0; i < N; i++) {
 
+    cin >> F;
+    printf("Fib(%d) = %lld\n", F, FibbonaciSequence[F]);
+  }
+  return 0;
+}
