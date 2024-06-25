@@ -1,5 +1,5 @@
-int main(){
-  std
+enum class MyClass {}; std
+
 
 
 
