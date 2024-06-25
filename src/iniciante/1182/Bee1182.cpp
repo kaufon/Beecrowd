@@ -1,3 +1,4 @@
+
 #include <bits/stdc++.h>
 #include <cstdio>
 using namespace std;
@@ -12,7 +13,7 @@ int main(int argc, char *argv[]) {
   for (int column = 0; column < 12; column++) {
     for (int row = 0; row < 12; row++) {
       cin >> matrix[column][row];
-      if (column == Line) {
+      if (row == Line) {
         Result += matrix[column][row];
       }
     }
