@@ -23,7 +23,7 @@ int main(int argc, char *argv[]) {
         }
         matrix[rowForCount][columnForCount] = x;
 
-        if (columnForCount == 0) {
+        if (columnForCount == 1) {
           cout << setw(3) << matrix[rowForCount][columnForCount];
         } else {
           cout << " " << setw(3) << matrix[rowForCount][columnForCount];
