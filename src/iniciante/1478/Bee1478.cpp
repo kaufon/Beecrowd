@@ -4,6 +4,7 @@ using namespace std;
 
 int main() {
   int n = 1;
+
   while (cin >> n && n != 0) {
     int rows = n, cols = n;
     vector<vector<int>> matrix(rows, vector<int>(cols));
