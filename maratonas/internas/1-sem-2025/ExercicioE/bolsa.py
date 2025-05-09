@@ -7,8 +7,8 @@ for i in range(3):
 if len(vendas) <= 0:
     print("IMPOSSIVEL")
 else:
-    dp = [0] * (tecido+1)
+    dp = [0] * tecido
     for custo, lucro in vendas:
-        for j in range(custo, tecido+1):
-            dp[j] = max(dp[j], dp[custo-tecido]+lucro)
-    print(dp[j])
+        for j in range(tecido-1, custo,-1):
+            dp[j] = max(dp[j], dp[tecido-custo]+lucro)
+    print(dp[tecido-1])
